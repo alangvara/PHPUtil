@@ -9,10 +9,13 @@
         }
     ],
     "autoload": {
-        "classmap": "src"
+        "psr-4" : {
+        	"Alangvara\\PHPUtil\\" : "src/"
+        }
     },
     "minimum-stability": "dev",
     "require": {
 			"php": ">=5.3.0"
     }
 }
+
