@@ -1,0 +1,14 @@
+{
+    "name": "alangvara/phputil",
+    "description": "Class with util methods for developing",
+    "authors": [
+        {
+            "name": "Alan Guevara",
+            "email": "alangvara@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+
+    }
+}
