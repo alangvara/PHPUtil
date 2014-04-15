@@ -1,5 +1,10 @@
 <?php
-
+/**
+   * PHPUtil v0.1
+   * 
+   * 
+   * @author     Alan Guevara <alangvara@gmail.com>
+   */
 namespace Alangvara\PHPUtil;
 
 class PHPUtil{
