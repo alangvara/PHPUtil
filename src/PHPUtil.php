@@ -3,7 +3,14 @@
 namespace Alangvara\PHPUtil;
 
 class PHPUtil{
-	
+		
+	/**
+	 * Generates a random string
+	 * $length int string length
+	 * $numeric boolean if the string should include numbers
+	 * $uppercase boolean if the string should include uppercase characters
+	 * $specialChars boolean if the string should include special chararacters
+	 */
 	public static function generateRandomString($length, $numeric = true, $uppercase = false,
 		$specialChars = false){
 		
@@ -32,5 +39,18 @@ class PHPUtil{
 		
     return $rstr;
 	}
+
+	/**
+	 * gets server max upload size
+	 */
+	public static function getMaxUploadSize(){
+		$maxUpload      = (int)(ini_get('upload_max_filesize'));
+		$maxPost        = (int)(ini_get('post_max_size'));
+		
+		$max = $maxUpload > $maxPost ? $maxPost : $maxUpload;
+		
+		return $max;
+	}
+
 	
 }
